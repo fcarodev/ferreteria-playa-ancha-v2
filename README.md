@@ -2,9 +2,10 @@
 
 Sitio web moderno y responsivo para Ferretería Playa Ancha, ubicada en Valparaíso, Chile.
 
-## 🌐 Sitio en Vivo
+## 🌐 Entornos
 
-**URL:** https://ferreteria-playa-anchav2.vercel.app
+- **Producción:** [https://ferreteriaplayaancha.cl](https://ferreteriaplayaancha.cl) (Rama `main`)
+- **Staging:** [https://staging.ferreteriaplayaancha.cl](https://staging.ferreteriaplayaancha.cl) (Rama `develop`)
 
 ## 📋 Descripción
 
@@ -38,7 +39,7 @@ Sitio web corporativo para una ferretería especializada en materiales de constr
 4. **Nosotros**
    - Historia de la empresa
    - Valores y compromiso
-   - Experiencia desde 2020
+   - Experiencia desde 2018
 
 5. **Reseñas de Clientes**
    - Testimonios reales de clientes satisfechos
@@ -76,7 +77,20 @@ Sitio web corporativo para una ferretería especializada en materiales de constr
 - **Vite 5.4.2** - Build tool y dev server
 - **Tailwind CSS 3.4.1** - Framework de CSS
 - **Lucide React** - Iconos
-- **Vercel** - Hosting y deployment
+- **Vercel** - Hosting y CI/CD
+
+## 🚀 Despliegue Configurado (CI/CD)
+
+El proyecto utiliza la **Integración de GitHub con Vercel** para automatizar los despliegues:
+
+1. **Producción (`main`)**: Cualquier push o merge hacia la rama `main` lanza un despliegue automático hacia `ferreteriaplayaancha.cl`.
+2. **Staging (`develop`)**: Cualquier push hacia la rama `develop` lanza un despliegue de pruebas hacia `staging.ferreteriaplayaancha.cl`. 
+
+### Indicador de Staging
+El entorno de Staging muestra una pequeña **"S" amarilla** en el Footer. Esto se controla mediante variables de entorno configuradas directamente en el panel de Vercel.
+
+**Variables de Entorno en Vercel:**
+- `VITE_IS_STAGING`: Debe ser definida como `true` **solo** para los entornos *Preview* y *Development*. (Desmarcada en *Production*).
 
 ## 📦 Instalación
 
@@ -100,7 +114,7 @@ npm run preview
 - **Email:** ferreteria.playaancha01@gmail.com
 - **Dirección:** Luis Guevara Ortuzar 1421, Valparaíso, Chile
 - **Horario:** 
-  - Lunes a Viernes: 9:00 - 19:00
+  - Lunes a Viernes: 8:00 - 17:00
   - Sábados: 9:00 - 14:00
 
 ## 🔗 Redes Sociales
@@ -110,4 +124,4 @@ npm run preview
 
 ## 📄 Licencia
 
-Proyecto privado - Todos los derechos reservados © 2024 Ferretería Playa Ancha
+Proyecto corporativo - Todos los derechos reservados © 2026 Ferretería Playa Ancha
