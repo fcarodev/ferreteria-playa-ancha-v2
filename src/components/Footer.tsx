@@ -131,8 +131,16 @@ export default function Footer() {
 
         <div className="border-t border-blue-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-blue-100 text-center md:text-left">
+            <p className="text-blue-100 text-center md:text-left flex items-center justify-center md:justify-start">
               © 2026 Ferretería Playa Ancha. Todos los derechos reservados.
+              {import.meta.env.VITE_IS_STAGING && (
+                <span 
+                  className="ml-2 inline-flex items-center justify-center bg-yellow-400 text-blue-900 font-bold text-xs h-5 w-5 rounded-full" 
+                  title="Staging Environment"
+                >
+                  S
+                </span>
+              )}
             </p>
             <div className="flex items-center gap-2 text-yellow-400">
               <div className="flex">
